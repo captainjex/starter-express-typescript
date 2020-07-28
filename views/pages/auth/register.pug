@@ -1,6 +1,17 @@
 
-extends ../../layouts/auth.pug
+extends ../../layouts/main.pug
 
 block content
-  div register
+  form(action="/auth/register", method="post")
+    .form-group
+      label.form-label(for='fullName') Nama Lengkap:
+      input#email.form-control(required=true name='fullName' type='text' placeholder='Nama Lengkap')
+    .form-group
+      label.form-label(for='email') Email:
+      input#email.form-control(required=true name='email' type='text' placeholder='Email')
+    .form-group
+      label.form-label(for='password') Password:
+      input#password.form-control(required=true name='password' type='password' placeholder='Password')
+    a.small(href='/auth/login') Sudah punya akun
+    button.btn.btn-primary.btn-block(type="submit") Daftar
 

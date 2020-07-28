@@ -2,3 +2,12 @@ extends ../layouts/main
 
 block content
   div home
+  if user
+    a.small(href='/auth/logout') 
+      button Keluar
+  else
+    a.small(href='/auth/login') 
+      button Login
+    a.small(href='/auth/register')
+      button Register
+    

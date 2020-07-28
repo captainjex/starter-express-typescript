@@ -1,4 +1,12 @@
 extends ../../layouts/main.pug
 
 block content
-  div login
+  form(action="/auth/login", method="post")
+    .form-group
+      label.form-label(for='email') Email:
+      input#email.form-control(required=true name='email' type='text' placeholder='Email')
+    .form-group
+      label.form-label(for='password') Password:
+      input#password.form-control(required=true name='password' type='password' placeholder='Password')
+    a.small(href='/auth/register') Tidak punya akun?
+    button.btn.btn-primary.btn-block(type="submit") Masuk
