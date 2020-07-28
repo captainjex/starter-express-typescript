@@ -1,0 +1,20 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "esModuleInterop": true,
+    "target": "es6",
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "noImplicitAny": true,
+    "moduleResolution": "node",
+    "sourceMap": true,
+    "outDir": "dist",
+    "resolveJsonModule": true,
+    "baseUrl": ".",
+    "typeRoots": ["node_modules/@types/"],
+    "noImplicitUseStrict": true,
+    "types": ["node", "jest"]
+  },
+  "include": ["src/**/*", "views"],
+  "exclude": ["node_modules", "dist"]
+}

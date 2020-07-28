@@ -1,0 +1,8 @@
+@import 'variables';
+
+.example {
+  background-color: transparent;
+  .text {
+    color: $blue;
+  }
+}
